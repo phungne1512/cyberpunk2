@@ -11,17 +11,17 @@ export const IMAGES = {
   heroBg: px(30315845, 'urban-street-scene-at-night-with-neon-lights', 1920),
 
   // About-section feature cards
-  aboutPortrait: 'https://ik.imagekit.io/zznoau6lx/1330457.jpeg',
-  aboutRobotic: 'https://ik.imagekit.io/zznoau6lx/1370787.jpeg',
+  aboutPortrait: px(8108330, 'man-in-black-jacket-smiling', 900),
+  aboutRobotic: px(31840611, 'futuristic-cyberpunk-woman-with-robotic-arm', 900),
 
   // Gallery — 6 portraits evoking the Edgerunners crew
   gallery: [
-    'https://ik.imagekit.io/zznoau6lx/1392207.png',
-    'https://ik.imagekit.io/zznoau6lx/wp14146142-cyberpunk-edgerunners-desktop-wallpapers.jpg',
-    'https://ik.imagekit.io/zznoau6lx/1307009.jpg',
-    'https://ik.imagekit.io/zznoau6lx/1278649.jpg',
-    'https://ik.imagekit.io/zznoau6lx/1274062.jpg',
-    'https://ik.imagekit.io/zznoau6lx/1299586.jpg',
+    px(36064312, 'futuristic-cyberpunk-portrait-in-vibrant-colors', 800),   // young man, vibrant neon — David vibe
+    px(8108553, 'woman-in-neon-light-at-the-party', 800),                   // woman in neon light — Lucy vibe
+    px(6940320, 'neon-lights-behind-a-bald-man', 800),                     // bald man, tough — Maine vibe
+    px(2825033, 'model-holding-neon-lights', 800),                          // woman holding neon — Rebecca vibe
+    px(8108429, 'man-in-black-t-shirt', 800),                               // man in black, neon — Pilar vibe
+    px(8108589, 'woman-leaning-on-a-wall', 800),                            // woman leaning, neon — Kiwi vibe
   ],
 
   // Quote portraits
