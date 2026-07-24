@@ -1,9 +1,10 @@
 import { Cpu, Heart, Skull, Crosshair } from 'lucide-react';
+import { IMAGES } from '@/lib/images';
 
 const FEATURES = [
   {
     icon: Cpu,
-    title: 'CHROME-Grade TOKENOMICS',
+    title: 'CHROME-GRADE TOKENOMICS',
     body: 'Deflationary burns hotter than a Sandevistan overclock. Every transaction scorches supply. Every holder gets harder, better, faster, stronger.',
     color: 'cyan',
   },
@@ -29,19 +30,19 @@ const FEATURES = [
 
 const colorMap: Record<string, { text: string; border: string; bg: string; glow: string }> = {
   cyan: { text: 'text-cyber-cyan', border: 'border-cyber-cyan/40', bg: 'hover:bg-cyber-cyan/5', glow: 'box-glow-cyan' },
-  magenta: { text: 'text-cyber-magenta', border: 'border-cyber-magenta/40', bg: 'hover:bg-cyber-magenta/5', glow: '' },
-  yellow: { text: 'text-cyber-yellow', border: 'border-cyber-yellow/40', bg: 'hover:bg-cyber-yellow/5', glow: '' },
-  green: { text: 'text-cyber-green', border: 'border-cyber-green/40', bg: 'hover:bg-cyber-green/5', glow: '' },
+  magenta: { text: 'text-cyber-magenta', border: 'border-cyber-magenta/40', bg: 'hover:bg-cyber-magenta/5', glow: 'box-glow-magenta' },
+  yellow: { text: 'text-cyber-yellow', border: 'border-cyber-yellow/40', bg: 'hover:bg-cyber-yellow/5', glow: 'box-glow-yellow' },
+  green: { text: 'text-cyber-green', border: 'border-cyber-green/40', bg: 'hover:bg-cyber-green/5', glow: 'box-glow-green' },
 };
 
 export default function About() {
   return (
     <section id="about" className="relative px-5 py-24">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-14 text-center">
+        <div className="mb-14 text-center reveal-glitch">
           <div className="font-mono text-xs tracking-[0.4em] text-cyber-magenta">// THE DOSSIER</div>
           <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
-            WHAT IS <span className="text-cyber-yellow text-glow-yellow">CYBERCOIN?</span>
+            WHAT IS <span className="text-cyber-yellow text-glow-yellow rgb-hover">CYBERCOIN?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl font-body text-lg text-gray-400">
             Born in a back-alley ripperdoc clinic somewhere between Watson and Westbrook,
@@ -50,19 +51,48 @@ export default function About() {
           </p>
         </div>
 
+        {/* Feature imagery strip */}
+        <div className="mb-10 grid gap-4 sm:grid-cols-2">
+          <div className="reveal-left group relative h-64 overflow-hidden clip-cyber neon-frame scan-card">
+            <img
+              src={IMAGES.aboutPortrait}
+              alt="Cyberpunk portrait with neon lights"
+              className="h-full w-full object-cover img-cyber"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-cyber-darker via-cyber-darker/30 to-transparent" />
+            <div className="absolute bottom-4 left-4 font-mono text-xs tracking-widest text-cyber-cyan animate-flicker">
+              // NIGHT CITY RESIDENT
+            </div>
+          </div>
+          <div className="reveal-right group relative h-64 overflow-hidden clip-cyber neon-frame scan-card">
+            <img
+              src={IMAGES.aboutRobotic}
+              alt="Cyberpunk woman with robotic arm"
+              className="h-full w-full object-cover img-cyber"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-cyber-darker via-cyber-darker/30 to-transparent" />
+            <div className="absolute bottom-4 left-4 font-mono text-xs tracking-widest text-cyber-magenta animate-flicker">
+              // CHROME INSTALLED
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-5 sm:grid-cols-2">
           {FEATURES.map((f, i) => {
             const c = colorMap[f.color];
             return (
               <div
                 key={i}
-                className={`clip-cyber group relative border ${c.border} bg-cyber-panel/50 p-7 transition-all duration-300 ${c.bg} ${c.glow}`}
+                className={`reveal-pop clip-cyber group holo-card scan-card relative border ${c.border} bg-cyber-panel/50 p-7 transition-all duration-300 ${c.bg} ${c.glow}`}
+                style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <div className="mb-4 flex items-center gap-3">
                   <div className={`flex h-12 w-12 items-center justify-center border ${c.border} bg-cyber-dark ${c.text}`}>
                     <f.icon className="h-6 w-6" />
                   </div>
-                  <h3 className={`font-display text-lg font-bold tracking-wide ${c.text}`}>{f.title}</h3>
+                  <h3 className={`font-display text-lg font-bold tracking-wide ${c.text} rgb-hover`}>{f.title}</h3>
                 </div>
                 <p className="font-body text-base leading-relaxed text-gray-300">{f.body}</p>
                 <div className={`absolute -right-px -top-px h-4 w-4 border-r-2 border-t-2 ${c.border}`} />

@@ -65,10 +65,10 @@ export default function Roadmap() {
   return (
     <section id="roadmap" className="relative px-5 py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-14 text-center">
-          <div className="font-mono text-xs tracking-[0.4em] text-cyber-green">// THE MISSION LOG</div>
+        <div className="mb-14 text-center reveal-glitch">
+          <div className="font-mono text-xs tracking-[0.4em] text-cyber-green animate-flicker">// THE MISSION LOG</div>
           <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
-            ROAD<span className="text-cyber-green text-glow-cyan">MAP</span>
+            ROAD<span className="text-cyber-green text-glow-cyan rgb-hover">MAP</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl font-body text-lg text-gray-400">
             We don't make promises. We make threats. Here's the plan — subject to cyberpsycho disruption.
@@ -86,7 +86,7 @@ export default function Roadmap() {
               return (
                 <div key={i} className={`relative flex ${left ? 'md:justify-start' : 'md:justify-end'}`}>
                   <div className={`w-full pl-16 md:w-1/2 md:pl-0 ${left ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                    <div className={`clip-cyber border ${c.border} bg-cyber-panel/60 p-6 transition-all hover:bg-cyber-panel/80`}>
+                    <div className={`reveal-${left ? 'left' : 'right'} clip-cyber scan-card holo-card border ${c.border} bg-cyber-panel/60 p-6 transition-all hover:bg-cyber-panel/80`}>
                       <div className={`flex items-center gap-2 ${left ? 'md:justify-end' : ''}`}>
                         <p.icon className={`h-5 w-5 ${c.text}`} />
                         <span className="font-mono text-xs tracking-widest text-gray-400">{p.phase}</span>

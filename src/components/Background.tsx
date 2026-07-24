@@ -1,8 +1,14 @@
+import DataStream from './DataStream';
+
 export default function Background() {
   return (
     <>
       {/* Animated perspective grid */}
       <div className="fixed inset-0 -z-10 overflow-hidden bg-cyber-darker">
+        {/* Data rain */}
+        <div className="absolute inset-0 opacity-40">
+          <DataStream />
+        </div>
         <div
           className="absolute inset-0 opacity-30"
           style={{

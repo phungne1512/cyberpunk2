@@ -34,10 +34,10 @@ export default function FAQ() {
   return (
     <section id="faq" className="relative px-5 py-24">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-12 text-center">
-          <div className="font-mono text-xs tracking-[0.4em] text-cyber-cyan">// TRANSMISSION LOG</div>
+        <div className="mb-12 text-center reveal-glitch">
+          <div className="font-mono text-xs tracking-[0.4em] text-cyber-cyan animate-flicker">// TRANSMISSION LOG</div>
           <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
-            <span className="text-cyber-cyan text-glow-cyan">FAQ</span>
+            <span className="text-cyber-cyan text-glow-cyan rgb-hover">FAQ</span>
           </h2>
         </div>
 
@@ -45,7 +45,7 @@ export default function FAQ() {
           {FAQS.map((f, i) => {
             const isOpen = open === i;
             return (
-              <div key={i} className="clip-cyber border border-cyber-cyan/20 bg-cyber-panel/50 transition-all hover:border-cyber-cyan/40">
+              <div key={i} className="reveal-pop clip-cyber scan-card border border-cyber-cyan/20 bg-cyber-panel/50 transition-all hover:border-cyber-cyan/40" style={{ transitionDelay: `${i * 60}ms` }}>
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="flex w-full items-center justify-between gap-4 p-5 text-left"

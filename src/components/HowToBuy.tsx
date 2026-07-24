@@ -28,10 +28,10 @@ export default function HowToBuy() {
   return (
     <section id="buy" className="relative px-5 py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-14 text-center">
-          <div className="font-mono text-xs tracking-[0.4em] text-cyber-yellow">// ACQUISITION PROTOCOL</div>
+        <div className="mb-14 text-center reveal-glitch">
+          <div className="font-mono text-xs tracking-[0.4em] text-cyber-yellow animate-flicker">// ACQUISITION PROTOCOL</div>
           <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
-            HOW TO <span className="text-cyber-yellow text-glow-yellow">BUY</span>
+            HOW TO <span className="text-cyber-yellow text-glow-yellow rgb-hover">BUY</span>
           </h2>
         </div>
 
@@ -58,7 +58,8 @@ export default function HowToBuy() {
             <a
               key={i}
               href="#buy"
-              className="clip-cyber-sm group flex items-center justify-between border border-cyber-cyan/20 bg-cyber-panel/50 p-4 transition-all hover:border-cyber-cyan/50"
+              className="reveal-pop clip-cyber-sm group flex items-center justify-between border border-cyber-cyan/20 bg-cyber-panel/50 p-4 transition-all hover:border-cyber-cyan/50 hover:box-glow-cyan scan-card"
+              style={{ transitionDelay: `${i * 60}ms` }}
             >
               <div>
                 <div className={`font-display text-base font-bold ${e.color}`}>{e.name}</div>
@@ -72,7 +73,7 @@ export default function HowToBuy() {
         {/* Steps */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s, i) => (
-            <div key={i} className="clip-cyber relative border border-cyber-cyan/20 bg-cyber-panel/50 p-6">
+            <div key={i} className="reveal-pop clip-cyber scan-card holo-card relative border border-cyber-cyan/20 bg-cyber-panel/50 p-6" style={{ transitionDelay: `${i * 80}ms` }}>
               <div className="font-display text-5xl font-black text-cyber-cyan/20">{s.n}</div>
               <div className="mt-2 flex items-center gap-2">
                 <Wallet className="h-4 w-4 text-cyber-yellow" />

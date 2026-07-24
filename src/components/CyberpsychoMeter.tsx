@@ -39,10 +39,10 @@ export default function CyberpsychoMeter() {
   return (
     <section id="meter" ref={sectionRef} className="relative px-5 py-24">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-12 text-center">
-          <div className="font-mono text-xs tracking-[0.4em] text-cyber-yellow">// LIVE DIAGNOSTIC</div>
+        <div className="mb-12 text-center reveal-glitch">
+          <div className="font-mono text-xs tracking-[0.4em] text-cyber-yellow animate-flicker">// LIVE DIAGNOSTIC</div>
           <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
-            CYBERPSYCHO <span className="text-cyber-magenta text-glow-magenta">METER</span>
+            CYBERPSYCHO <span className="text-cyber-magenta text-glow-magenta rgb-hover">METER</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl font-body text-lg text-gray-400">
             Real-time measurement of your $CYBER-induced psychological state.
@@ -50,7 +50,7 @@ export default function CyberpsychoMeter() {
           </p>
         </div>
 
-        <div className="clip-cyber border border-cyber-magenta/40 bg-cyber-panel/60 p-8 box-glow-cyan">
+        <div className="reveal-pop clip-cyber scan-card border border-cyber-magenta/40 bg-cyber-panel/60 p-8 box-glow-cyan">
           {/* Bar */}
           <div className="relative h-10 w-full overflow-hidden border border-cyber-cyan/30 bg-cyber-darker">
             <div

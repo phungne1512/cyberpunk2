@@ -23,7 +23,7 @@ export default function Ticker() {
   const items = [...TICKER_ITEMS, ...TICKER_ITEMS];
 
   return (
-    <div className="relative overflow-hidden border-y border-cyber-cyan/30 bg-cyber-dark/70 py-2">
+    <div className="relative overflow-hidden border-y border-cyber-cyan/30 bg-cyber-dark/70 py-2 border-flicker">
       <div className="flex w-max animate-ticker gap-8 whitespace-nowrap">
         {items.map((it, i) => (
           <div key={i} className="flex items-center gap-2 font-mono text-xs">
@@ -59,7 +59,7 @@ export function MiniStats() {
         { icon: Skull, label: 'REKT COUNT', val: '6,942', color: 'text-cyber-magenta' },
         { icon: Rocket, label: 'TO THE MOON', val: 'CONFIRMED', color: 'text-cyber-yellow' },
       ].map((s, i) => (
-        <div key={i} className="clip-cyber-sm border border-cyber-cyan/30 bg-cyber-panel/60 p-3 text-center">
+        <div key={i} className="reveal-pop clip-cyber-sm scan-card border border-cyber-cyan/30 bg-cyber-panel/60 p-3 text-center transition-all hover:border-cyber-cyan/60" style={{ transitionDelay: `${i * 60}ms` }}>
           <s.icon className={`mx-auto mb-1 h-5 w-5 ${s.color}`} />
           <div className="font-mono text-[10px] tracking-widest text-gray-400">{s.label}</div>
           <div className={`font-display text-sm font-bold ${s.color}`}>{s.val}</div>

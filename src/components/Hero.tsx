@@ -45,15 +45,15 @@ export default function Hero() {
 
       <div className="mx-auto max-w-5xl text-center">
         {/* Warning badge */}
-        <div className="mb-8 inline-flex items-center gap-2 border border-cyber-yellow/50 bg-cyber-yellow/10 px-4 py-1.5 font-mono text-[11px] tracking-widest text-cyber-yellow animate-flicker backdrop-blur-sm">
-          <Skull className="h-4 w-4" />
+        <div className="boot-flicker mb-8 inline-flex items-center gap-2 border border-cyber-yellow/50 bg-cyber-yellow/10 px-4 py-1.5 font-mono text-[11px] tracking-widest text-cyber-yellow animate-flicker backdrop-blur-sm">
+          <Skull className="h-4 w-4 animate-shake" />
           WARNING: CYBERPSYCHO RISK LEVEL — CRITICAL
         </div>
 
         {/* Title */}
-        <h1 className="font-display text-6xl font-black leading-none tracking-tighter text-white sm:text-8xl md:text-9xl">
-          <span className="glitch-text text-glow-yellow" data-text="CYBER">CYBER</span>
-          <span className="text-cyber-magenta text-glow-magenta">COIN</span>
+        <h1 className="animate-glitch-in font-display text-6xl font-black leading-none tracking-tighter text-white sm:text-8xl md:text-9xl">
+          <span className="glitch-text rgb-hover text-glow-yellow" data-text="CYBER">CYBER</span>
+          <span className="text-cyber-magenta text-glow-magenta rgb-hover">COIN</span>
         </h1>
 
         {/* Rotating subtitle */}
@@ -62,7 +62,7 @@ export default function Hero() {
             className="font-display text-xl font-bold tracking-[0.3em] text-cyber-cyan text-glow-cyan transition-all duration-500"
             key={idx}
           >
-            <span className="animate-rise inline-block">// {ROTATING_WORDS[idx]}</span>
+            <span className="animate-rise inline-block type-cursor">// {ROTATING_WORDS[idx]}</span>
           </div>
         </div>
 
@@ -70,14 +70,14 @@ export default function Hero() {
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href="#buy"
-            className="clip-cyber group relative flex items-center gap-1.5 bg-cyber-yellow px-5 py-2.5 font-display text-xs font-bold tracking-widest text-cyber-dark transition-all hover:bg-cyber-cyan box-glow-yellow"
+            className="clip-cyber group relative flex items-center gap-1.5 bg-cyber-yellow px-5 py-2.5 font-display text-xs font-bold tracking-widest text-cyber-dark transition-all hover:bg-cyber-cyan hover:animate-shake box-glow-yellow"
           >
             <Zap className="h-3.5 w-3.5 fill-cyber-dark" />
             BUY $CYBER NOW
           </a>
           <a
             href="#about"
-            className="clip-cyber flex items-center gap-1.5 border border-cyber-cyan/50 bg-cyber-panel/40 px-5 py-2.5 font-display text-xs font-bold tracking-widest text-cyber-cyan backdrop-blur-sm transition-all hover:bg-cyber-cyan/10"
+            className="clip-cyber flex items-center gap-1.5 border border-cyber-cyan/50 bg-cyber-panel/40 px-5 py-2.5 font-display text-xs font-bold tracking-widest text-cyber-cyan backdrop-blur-sm transition-all hover:bg-cyber-cyan/10 hover:animate-neon-pulse"
           >
             READ THE DOSSIER
           </a>
@@ -86,14 +86,14 @@ export default function Hero() {
         {/* Contract address */}
         <div className="mx-auto mt-8 max-w-md">
           <div className="font-mono text-[10px] tracking-widest text-gray-500">CONTRACT ADDRESS</div>
-          <div className="mt-1 truncate border border-cyber-magenta/30 bg-cyber-dark/60 px-3 py-2 font-mono text-xs text-cyber-magenta backdrop-blur-sm">
+          <div className="mt-1 truncate border border-cyber-magenta/30 bg-cyber-dark/60 px-3 py-2 font-mono text-xs text-cyber-magenta backdrop-blur-sm animate-neon-pulse">
             0xCH00M...wAk3UpS4muR4i...d34d
           </div>
         </div>
 
         {/* Scroll cue */}
         <div className="mt-14 flex flex-col items-center gap-1 text-cyber-cyan/60">
-          <span className="font-mono text-[10px] tracking-widest">SCROLL TO JACK IN</span>
+          <span className="font-mono text-[10px] tracking-widest animate-blink">SCROLL TO JACK IN</span>
           <ChevronDown className="h-5 w-5 animate-bounce" />
         </div>
       </div>

@@ -26,8 +26,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <a href="#top" className="flex items-center gap-2 font-display text-xl font-black tracking-widest text-cyber-yellow text-glow-yellow">
-          <Zap className="h-6 w-6 fill-cyber-yellow" />
+        <a href="#top" className="flex items-center gap-2 font-display text-xl font-black tracking-widest text-cyber-yellow text-glow-yellow rgb-hover">
+          <Zap className="h-6 w-6 fill-cyber-yellow animate-flicker" />
           $CYBER
         </a>
 
@@ -43,7 +43,7 @@ export default function Navbar() {
           ))}
           <a
             href="#buy"
-            className="clip-cyber-sm bg-cyber-yellow px-5 py-2 font-display text-xs font-bold tracking-widest text-cyber-dark transition-all hover:bg-cyber-cyan hover:text-cyber-dark box-glow-yellow"
+            className="clip-cyber-sm bg-cyber-yellow px-5 py-2 font-display text-xs font-bold tracking-widest text-cyber-dark transition-all hover:bg-cyber-cyan hover:text-cyber-dark hover:animate-shake box-glow-yellow"
           >
             BUY NOW
           </a>
