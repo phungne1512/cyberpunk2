@@ -2,12 +2,12 @@ import { IMAGES } from '@/lib/images';
 import { Eye } from 'lucide-react';
 
 const CAPTIONS = [
-  'NEON ALLEY — WATSON',
-  'GHOST IN THE SIGNAL',
-  'TUNNEL RUNNERS',
-  'COSPLAY RIOT',
-  'DREAMS OF CHROME',
-  'RAIN SECTOR 7',
+  'THE KID — WATSON',
+  'NETRUNNER — THE NET',
+  'THE BOSS — PACIFICA',
+  'THE GUNNER — JAPANTOWN',
+  'THE FIXER — WATSON',
+  'THE GHOST — CITY CENTER',
 ];
 
 export default function Gallery() {
