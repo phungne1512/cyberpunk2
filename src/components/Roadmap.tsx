@@ -10,7 +10,7 @@ const PHASES = [
     points: [
       'Stealth launch on the streets of Night City',
       'Liquidity locked, contract renounced',
-      'First 1,000 chooms onboarded — no KYC, no mercy',
+      'First 1,000 cybers onboarded — no KYC, no mercy',
     ],
   },
   {
@@ -46,7 +46,7 @@ const PHASES = [
     icon: Globe,
     color: 'yellow',
     points: [
-      'ChoomDAO governance launch',
+      'CyberDAO governance launch',
       'Cross-chain bridge to the metaverse',
       'IRL Night City meetups (we wish)',
       'The moon. Obviously the moon.',

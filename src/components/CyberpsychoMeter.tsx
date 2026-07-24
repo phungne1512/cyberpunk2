@@ -5,7 +5,7 @@ const PHASES = [
   { pct: 20, label: 'Twitchy', color: '#39FF14', desc: 'Mild tremors. You checked the chart twice.' },
   { pct: 45, label: 'Hyper-Reflex', color: '#00F0FF', desc: 'Sandevistan kicks in. Fingers blur across the swap button.' },
   { pct: 70, label: 'Overclocked', color: '#FFE600', desc: 'Heart rate 180. You\'re diamond-handling a memecoin at 3 AM.' },
-  { pct: 90, label: 'Cyberpsycho', color: '#FF00A8', desc: 'Reality is a construct. There is only $CHOOM.' },
+  { pct: 90, label: 'Cyberpsycho', color: '#FF00A8', desc: 'Reality is a construct. There is only $CYBER.' },
   { pct: 100, label: 'FLATLINE', color: '#FF2D2D', desc: 'You\'ve become the chart. The chart is you. GG.' },
 ];
 
@@ -45,7 +45,7 @@ export default function CyberpsychoMeter() {
             CYBERPSYCHO <span className="text-cyber-magenta text-glow-magenta">METER</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl font-body text-lg text-gray-400">
-            Real-time measurement of your $CHOOM-induced psychological state.
+            Real-time measurement of your $CYBER-induced psychological state.
             The higher you go, the closer to flatline. No refunds on your humanity.
           </p>
         </div>

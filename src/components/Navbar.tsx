@@ -28,7 +28,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <a href="#top" className="flex items-center gap-2 font-display text-xl font-black tracking-widest text-cyber-yellow text-glow-yellow">
           <Zap className="h-6 w-6 fill-cyber-yellow" />
-          $CHOOM
+          $CYBER
         </a>
 
         <div className="hidden items-center gap-7 md:flex">

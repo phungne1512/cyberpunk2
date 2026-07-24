@@ -9,9 +9,9 @@ const EXCHANGES = [
 ];
 
 const STEPS = [
-  { n: '01', title: 'GET A WALLET', body: 'Install MetaMask or Phantom. Write down your seed phrase. Don\'t lose it — we can\'t help you, choom.' },
+  { n: '01', title: 'GET A WALLET', body: 'Install MetaMask or Phantom. Write down your seed phrase. Don\'t lose it — we can\'t help you, cyber.' },
   { n: '02', title: 'GRAB SOME ETH/SOL', body: 'Fund your wallet from an exchange. You\'ll need gas to ride the streets.' },
-  { n: '03', title: 'CONNECT & SWAP', body: 'Hit a DEX above, paste the contract address, and swap for $CHOOM. Slippage: 6.9%.' },
+  { n: '03', title: 'CONNECT & SWAP', body: 'Hit a DEX above, paste the contract address, and swap for $CYBER. Slippage: 6.9%.' },
   { n: '04', title: 'WELCOME TO NIGHT CITY', body: 'You\'re in. HODL, meme, and watch the burn vault eat supply. Don\'t go cyberpsycho.' },
 ];
 
@@ -38,7 +38,7 @@ export default function HowToBuy() {
         {/* Contract */}
         <div className="mx-auto mb-12 max-w-2xl">
           <div className="clip-cyber border border-cyber-magenta/40 bg-cyber-dark/70 p-4">
-            <div className="mb-2 font-mono text-[10px] tracking-widest text-gray-500">CONTRACT ADDRESS — COPY IT, CHOOM</div>
+            <div className="mb-2 font-mono text-[10px] tracking-widest text-gray-500">CONTRACT ADDRESS — COPY IT, CYBER</div>
             <div className="flex items-center gap-3">
               <code className="flex-1 truncate font-mono text-sm text-cyber-magenta">{address}</code>
               <button

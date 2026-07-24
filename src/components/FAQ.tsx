@@ -3,8 +3,8 @@ import { Plus, Minus } from 'lucide-react';
 
 const FAQS = [
   {
-    q: 'Is ChoomCoin a scam?',
-    a: 'Define "scam." We have no team wallet, renounced contract, and locked liquidity. Is it a scam if we told you upfront it\'s a meme coin with zero utility? That\'s on you, choom.',
+    q: 'Is CyberCoin a scam?',
+    a: 'Define "scam." We have no team wallet, renounced contract, and locked liquidity. Is it a scam if we told you upfront it\'s a meme coin with zero utility? That\'s on you, cyber.',
   },
   {
     q: 'Will I get rich?',
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: 'What happens at Cyberpsycho level 100%?',
-    a: 'You flatline. Metaphorically. The burn vault triggers a massive supply torch and holders get airdropped bonus $CHOOM. Don\'t lose your humanity over it.',
+    a: 'You flatline. Metaphorically. The burn vault triggers a massive supply torch and holders get airdropped bonus $CYBER. Don\'t lose your humanity over it.',
   },
   {
     q: 'How do I earn the bounty?',

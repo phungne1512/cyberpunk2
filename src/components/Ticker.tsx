@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Rocket, Skull, TrendingUp } from 'lucide-react';
 
 const TICKER_ITEMS = [
-  { label: '$CHOOM', value: '0.0420', change: '+420%' },
+  { label: '$CYBER', value: '0.0420', change: '+420%' },
   { label: 'HOLDERS', value: '69,420', change: '+1,337' },
   { label: 'MARKET CAP', value: '$6.90M', change: 'WAGMI' },
   { label: 'LIQUIDITY', value: 'LOCKED', change: '100%' },

@@ -17,14 +17,14 @@ export default function Footer() {
             THE STREET IS <span className="text-cyber-yellow text-glow-yellow">WATCHING</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl font-body text-lg text-gray-400">
-            Jack in or get left in the rain. Night City waits for no one, choom.
+            Jack in or get left in the rain. Night City waits for no one, cyber.
           </p>
           <a
             href="#buy"
             className="clip-cyber mt-6 inline-flex items-center gap-2 bg-cyber-yellow px-8 py-4 font-display text-sm font-bold tracking-widest text-cyber-dark transition-all hover:bg-cyber-cyan box-glow-yellow"
           >
             <Zap className="h-5 w-5 fill-cyber-dark" />
-            BUY $CHOOM NOW
+            BUY $CYBER NOW
           </a>
         </div>
 
@@ -45,13 +45,13 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="mx-auto max-w-3xl border-t border-cyber-cyan/10 pt-8 text-center">
           <p className="font-mono text-xs leading-relaxed text-gray-500">
-            $CHOOM is a meme coin with no intrinsic value, no expectation of profit, and no utility.
+            $CYBER is a meme coin with no intrinsic value, no expectation of profit, and no utility.
             This is not financial advice. Crypto is volatile and you may lose everything.
             Nothing here is affiliated with, endorsed by, or connected to CD Projekt Red, Studio Trigger,
-            or the Cyberpunk franchise. We\'re just chooms who love the vibe. DYOR. Stay chrome.
+            or the Cyberpunk franchise. We\'re just cybers who love the vibe. DYOR. Stay chrome.
           </p>
           <div className="mt-6 font-display text-sm font-bold tracking-widest text-cyber-yellow">
-            $CHOOM © 2077 — NIGHT CITY
+            $CYBER © 2077 — NIGHT CITY
           </div>
         </div>
       </div>

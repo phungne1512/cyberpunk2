@@ -22,7 +22,7 @@ const FEATURES = [
   {
     icon: Crosshair,
     title: 'BOUNTY REWARDS',
-    body: 'Memes, raids, and content get paid in $CHOOM. The best street artists in Night City earn chrome for spreading the gospel.',
+    body: 'Memes, raids, and content get paid in $CYBER. The best street artists in Night City earn chrome for spreading the gospel.',
     color: 'green',
   },
 ];
@@ -41,11 +41,11 @@ export default function About() {
         <div className="mb-14 text-center">
           <div className="font-mono text-xs tracking-[0.4em] text-cyber-magenta">// THE DOSSIER</div>
           <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
-            WHAT IS <span className="text-cyber-yellow text-glow-yellow">CHOOMCOIN?</span>
+            WHAT IS <span className="text-cyber-yellow text-glow-yellow">CYBERCOIN?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl font-body text-lg text-gray-400">
             Born in a back-alley ripperdoc clinic somewhere between Watson and Westbrook,
-            $CHOOM is the native currency of the streets. It doesn't have utility. It has{' '}
+            $CYBER is the native currency of the streets. It doesn't have utility. It has{' '}
             <span className="text-cyber-cyan">attitude</span>.
           </p>
         </div>

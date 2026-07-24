@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Flame, Users, Lock, Skull } from 'lucide-react';
 
 const STATS = [
-  { label: 'TOTAL SUPPLY', value: 69420, suffix: 'T', color: 'text-cyber-cyan', desc: '69,420 trillion $CHOOM. Because of course.' },
+  { label: 'TOTAL SUPPLY', value: 69420, suffix: 'T', color: 'text-cyber-cyan', desc: '69,420 trillion $CYBER. Because of course.' },
   { label: 'BURNED', value: 42, suffix: '%', color: 'text-cyber-magenta', desc: 'Tossed into the incinerator. Forever flatlined.' },
   { label: 'LIQUIDITY', value: 95, suffix: '%', color: 'text-cyber-green', desc: 'Locked for 69 years. Arasaka can\'t even touch it.' },
   { label: 'MARKETING', value: 4, suffix: '%', color: 'text-cyber-yellow', desc: 'Funds the bounty board. Pay the streets.' },
